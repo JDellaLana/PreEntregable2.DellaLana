@@ -1,0 +1,457 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2cb;
+}
+
+
+
+
+@media (max-width: 768px) {
+   
+    .header-logo img {
+        max-width: 50%;
+    }
+
+    .menu-horizontal li {
+        display: block;
+    }
+
+    .menu-vertical {
+        display: block;
+    }
+
+    .registrarse-container {
+        display: inline-block;
+    }
+
+
+}
+
+
+@media (max-width: 576px) {
+    
+    .header-logo img {
+        max-width: 40%;
+    }
+
+    .menu-horizontal li {
+        display: block;
+    }
+
+    .menu-vertical {
+        display: block;
+    }
+
+    .registrarse-container {
+        display: inline-block;
+    }
+
+    
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: darkred;
+    position: fixed;
+    width: 100%;
+}
+
+
+.header-logo img {
+    display: flex;
+    width: 50px;
+ 
+}
+
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+}
+
+.menu-horizontal li {
+    margin-right: 20px;
+ 
+}
+
+
+.menu-vertical {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    color: black;
+}
+
+.menu-horizontal li:nth-child(2):hover .menu-vertical {
+    display: block;
+}
+
+.registrarse-container {
+    position: relative;
+    display: inline-block;
+}
+
+.registrarse-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.registrarse-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    z-index: 1;
+}
+
+.registrarse-container:hover .registrarse-dropdown {
+    display: block;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    font-weight: 900;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-resumen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.resumen {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resumen h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.resumen p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .video-resumen {
+        grid-template-columns: 1fr;
+    }
+}
+
+.img-menu {
+    margin-top: 80px;
+}
+
+.section-comentarios {
+    text-align: center;
+}
+
+
+section.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.inicio h2 {
+    margin: 10px 0;
+}
+
+section.inicio iframe {
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+iframe {
+    max-width: 100%;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h3 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+
+
+}
+
+.carrousel-inner img{
+    object-fit: cover;
+    height: 400px;
+}
+.carrousel-control-prev,
+.carrousel-control-next {
+    display: none;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+h5{
+    font-family: initial;
+    color: #f2f2f2cb;
+}
+
+.mdescripcion {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.mdescripcion h2{
+    font-size: 24px;
+}
+
+.ministerio-abundancia {
+    display: flex;
+    align-items: center;
+}
+
+.ministerio-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ministerio-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.ministerio-info h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+
+.ministerio-info p {
+    text-align: justify;
+}
+
+
+.ministerio-image {
+    flex: 1;
+}
+
+
+.ministerio-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.ministerio-paz {
+    display: flex;
+    align-items: center;
+}
+
+.ministerio-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ministerio-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.ministerio-text h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.ministerio-text p {
+    text-align: justify;
+}
+
+.ministerio-image {
+    flex: 1;
+}
+
+.ministerio-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.dosmin-video{
+    text-align: center;
+    padding: 80px;
+}
+
+.dosmin-comparativa {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dosmin-comparativa .ficcion,
+.dosmin-comparativa .realidad {
+    flex: 1; 
+    padding: 0 20px; 
+}
+.dosmin-comparativa h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dosmin-comparativa ol {
+    padding: 0;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.reflexion {
+    font-weight: 800;
+    text-align: center;
+    font-family:serif;
+    font-size: x-large;
+}
+
+.gh-frase{
+    padding: 80px;
+    text-align:center;
+    
+}
+
+.gh-frase img{
+    width: 100%;
+
+}
+.gh-rostro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; 
+    align-items: center;
+}
+
+.gh-rostro img {
+    max-width: 100%;
+}
+
+.gh-rostro h2 {
+    grid-column: 1 / span 2; 
+}
+.gh-rostro p {
+    grid-column: 2; 
+}
+
+.gh-leyes img{
+    width: 100%;
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer-logo img {
+    display: flex;
+    align-items: center;
+    order: 1;
+    width: 50px;
+    height: auto;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+}
