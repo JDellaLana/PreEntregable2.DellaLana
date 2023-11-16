@@ -6,9 +6,6 @@ body {
     background-color: #f2f2f2cb;
 }
 
-
-
-
 @media (max-width: 768px) {
    
     .header-logo img {
@@ -52,46 +49,39 @@ body {
     
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
 
-header {
+    .video-resumen {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.navbar {
+    background-color: red; /* Color de fondo rojo */
+    color: black; 
+}
+  
+.header-logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: darkred;
-    position: fixed;
-    width: 100%;
 }
-
-
+  
 .header-logo img {
-    display: flex;
-    width: 50px;
- 
+    max-height: 40px; 
+    margin-right: 10px; 
 }
-
-
-.menu-horizontal {
-    list-style: none;
-    display: flex;
+  
+.navbar-brand {
+    margin-bottom: 0; 
 }
-
-.menu-horizontal li {
-    margin-right: 20px;
- 
-}
-
-
-.menu-vertical {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    padding: 10px;
-    color: black;
-}
-
-.menu-horizontal li:nth-child(2):hover .menu-vertical {
-    display: block;
+  
+.navbar-toggler {
+    order: 1;
+    position: sticky;
 }
 
 .registrarse-container {
@@ -223,6 +213,8 @@ main {
 iframe {
     max-width: 100%;
     margin: auto;
+    width: 560px;
+    height: 315px;
 }
 
 section {
@@ -253,13 +245,15 @@ a:hover {
     width: 100%;
     margin-right: -100%;
     background-size: cover;
-
-
+    margin: 0;
+    padding: 0;
 }
 
 .carrousel-inner img{
     object-fit: cover;
     height: 400px;
+    height: 100%;
+    width: 100%;
 }
 .carrousel-control-prev,
 .carrousel-control-next {
@@ -369,6 +363,8 @@ h5{
 iframe {
     display: block;
     margin: 0 auto;
+    margin-top: 80px;
+    width: 100%;
 }
 
 .dosmin-video{
@@ -407,6 +403,7 @@ iframe {
 }
 
 .gh-frase{
+    margin-top: 20px;
     padding: 80px;
     text-align:center;
     
