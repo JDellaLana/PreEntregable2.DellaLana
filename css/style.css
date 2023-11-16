@@ -355,9 +355,16 @@ iframe {
     width: 100%;
 }
 
-.dosmin-video{
+.dosmin-video h2{
     text-align: center;
     padding: 80px;
+    margin-top:40px ;
+}
+
+.dosmin-video p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+
 }
 
 .dosmin-comparativa {
