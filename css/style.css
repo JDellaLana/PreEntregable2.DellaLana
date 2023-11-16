@@ -24,6 +24,14 @@ body {
         display: inline-block;
     }
 
+    .container {
+        padding: 10px;
+    }
+
+    .video-resumen {
+        grid-template-columns: 1fr;
+    }
+
 
 }
 
@@ -49,22 +57,23 @@ body {
     
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    .video-resumen {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 .navbar {
-    background-color: red; /* Color de fondo rojo */
+    background-color:#b30d0d;
     color: black; 
 }
+
+.navbar-brand {
+    margin-bottom: 0; 
+}
   
+.navbar-toggler {
+    order: 1;
+    position: relative;
+    bottom: 40px;
+}
+
+
 .header-logo {
     display: flex;
     align-items: center;
@@ -75,14 +84,6 @@ body {
     margin-right: 10px; 
 }
   
-.navbar-brand {
-    margin-bottom: 0; 
-}
-  
-.navbar-toggler {
-    order: 1;
-    position: sticky;
-}
 
 .registrarse-container {
     position: relative;
@@ -171,15 +172,6 @@ video {
     text-align: justify;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    .video-resumen {
-        grid-template-columns: 1fr;
-    }
-}
 
 .img-menu {
     margin-top: 80px;
@@ -252,13 +244,9 @@ a:hover {
 .carrousel-inner img{
     object-fit: cover;
     height: 400px;
-    height: 100%;
-    width: 100%;
+
 }
-.carrousel-control-prev,
-.carrousel-control-next {
-    display: none;
-}
+
 
 .carousel-caption {
     position: absolute;
