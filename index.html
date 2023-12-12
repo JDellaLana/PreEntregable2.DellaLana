@@ -7,6 +7,9 @@
   <!--link a css y bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <link rel="stylesheet" href="./css/style.css">
   <title>ReadClub</title>
@@ -19,11 +22,11 @@
 
     <nav class="navbar bg-darkred fixed-top">
         <div class="header-logo">
-            <img src="./images/mi-logo.jpg" alt="Logo de mi sitio web">
+            <img src="./images/mi-logo.png" alt="Logo de mi sitio web">
             <a class="navbar-brand" href="index.html">ReadClub</a>
           </div>
           <h1>1984</h1>
-      
+
         <div class="">
           <a class="navbar-brand" href="index.html"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -81,11 +84,21 @@
       <img src="./images/gif1984.gif" alt="el pueblo de la novela ovacionando al partido del gran hermano"
         class="img-menu">
       <h2>Reseñas</h2>
-      <div>
-        <p><em>"Con su brutal representación del totalitarismo, '1984' de George Orwell es una llamada de alerta
+
+      <div class="comentarios-container">
+
+        <div class="comentario" >
+         <p><em>"Con su brutal representación del totalitarismo, '1984' de George Orwell es una llamada de alerta
             que resuena en cada página."</em></p>
-        <p><em>"Un oscuro y visionario viaje a un futuro distópico donde la verdad es un crimen y la libertad
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="comentario" >
+         <p><em>"Un oscuro y visionario viaje a un futuro distópico donde la verdad es un crimen y la libertad
             una ilusión: '1984' de George Orwell, una advertencia atemporal."</em></p>
+            <div class="rating">★★★★★</div>
+        </div>
+
       </div>
 
 
@@ -93,6 +106,7 @@
     </section>
 
     <section class="inicio">
+      <div class="descripcion"></div>
       <p>"1984" es una novela distópica escrita por George Orwell y publicada en 1949. Esta obra maestra literaria
         presenta un mundo sombrío y aterrador en un futuro totalitario. La historia se desarrolla en un Estado
         ficticio llamado "Oceanía", donde el Partido, liderado por el omnipresente "Gran Hermano", ejerce un
@@ -112,13 +126,16 @@
         A medida que Winston se adentra en la búsqueda de la verdad y la resistencia contra el Partido, la
         novela explora los límites de la resistencia humana en un entorno brutal y despiadado. La narrativa es
         intensa y perturbadora, creando una sensación de opresión constante y un oscuro sentido de fatalismo</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/3ccNnTAGgBQ?si=gLPjxIzMSshGGnR7"
+      <iframe width="560" height="620" src="https://www.youtube.com/embed/3ccNnTAGgBQ?si=gLPjxIzMSshGGnR7"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-      <h2><strong>"Never Trust Your Own Eyes, Believe What Are You Told"</strong></h2> <!--es una frase del libro-->
-
     </section>
+
+    <div class="animate__animated animate__fadeIn">
+      <h2><strong>"Never Trust Your Own Eyes, Believe What Are You Told"</strong></h2><!--es una frase del libro-->
+    </div>
+
   </main>
 
     <h3>Descubre mas...</h3>
@@ -175,7 +192,7 @@
 
   <footer>
     <div class="footer-logo">
-      <img src="./images/mi-logo.jpg" alt="Logo de mi sitio web">ReadClub
+      <img src="./images/mi-logo.png" alt="Logo de mi sitio web">ReadClub
     </div>
     <div class="redes-sociales"> Encuentranos en:
       <a href="">Facebook</a>
