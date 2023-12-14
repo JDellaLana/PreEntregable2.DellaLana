@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+    .header-logo img {
+      max-width: 50%;
+    }
+  
+    .menu-horizontal li {
+      display: block;
+    }
+  
+    .menu-vertical {
+      display: block;
+    }
+  
+    .registrarse-container {
+      display: inline-block;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .video-resumen {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header-logo img {
+      max-width: 40%;
+    }
+  
+    .menu-horizontal li {
+      display: block;
+    }
+  
+    .menu-vertical {
+      display: block;
+    }
+  
+    .registrarse-container {
+      display: inline-block;
+    }
+  }
+  
