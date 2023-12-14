@@ -106,36 +106,29 @@ h1 {
 
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-
-.video-resumen {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.container .video-resumen {
   max-width: 100%;
   padding-top: 80px;
 }
-
-video {
+.container video {
   max-width: 100%;
   height: auto;
 }
-
-.resumen {
+.container .resumen {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.resumen h2 {
+.container .resumen h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.resumen p {
+.container .resumen p {
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
