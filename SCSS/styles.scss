@@ -1,8 +1,6 @@
-@import 'mediaq';
-@import 'mixins';
-@import 'variables';
-
-
+@import '_mediaq';
+@import '_mixins';
+@import '_variables';
 
 body {
   font-family: Arial, sans-serif;
@@ -17,11 +15,11 @@ body {
   background-color: $primary-color;
   color: black;
 
-  &-brand {
+  .navbar-brand {
       margin-bottom: 0;
   }
 
-  &-toggler {
+  .navbar-toggler {
       order: 1;
       position: relative;
   }
@@ -114,9 +112,6 @@ h1 {
     }
   }
 }
-
-
-
 
 .img-menu {
   margin-top: 40px;
@@ -212,7 +207,6 @@ img {
   margin: 0 auto;
 }
 
-
 .dosmin-video {
   text-align: center;
 
@@ -242,77 +236,73 @@ img {
 
 .dosmin-comparativa {
   display: flex;
+
   .ficcion,
   .realidad {
-  width: 50%;
-  overflow: hidden;
-  border: 1px solid $border-color;
-  background-color: $background-color;
-  margin-right: 10px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  
-  h2 {
-    padding: $accordion-padding;
-    cursor: pointer;
-    user-select: none;
-    border-bottom: 1px solid $border-color;
-    position: relative;
-
-    &:after {
-
-      position: absolute;
-      right: $accordion-padding;
-      top: 50%;
-      transform: translateY(-50%);
-      @include transition(transform 1s ease); 
-    }
-  }
-
-  
-  .accordion-item {
-    padding: $accordion-padding;
-    max-height: 0; 
+    width: 50%;
     overflow: hidden;
+    border: 1px solid $border-color;
+    background-color: $background-color;
+    margin-right: 10px;
 
-    p {
-      margin: 0;
+    &:last-child {
+      margin-right: 0;
     }
-  }
 
-  &:hover {
-    h2:after {
-      transform: translateY(-50%) rotate(45deg);
+    h2 {
+      padding: $accordion-padding;
+      cursor: pointer;
+      user-select: none;
+      border-bottom: 1px solid $border-color;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        right: $accordion-padding;
+        top: 50%;
+        transform: translateY(-50%);
+        @include transition(transform 1s ease);
+      }
     }
 
     .accordion-item {
-      max-height: 100vh; 
-      @include transition(max-height 0.3s ease);
+      padding: $accordion-padding;
+      max-height: 0;
+      overflow: hidden;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &:hover {
+      h2:after {
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      .accordion-item {
+        max-height: 100vh;
+        @include transition(max-height 0.3s ease);
+      }
     }
   }
 }
-}
-
-
 
 #dosmin-comparativa {
-@extend .dosmin-comparativa;
+  @extend .dosmin-comparativa;
 }
+
 .reflexion {
   font-weight: 800;
   text-align: center;
   font-family: serif;
   font-size: 18px;
   margin-top: 20px;
+
   i {
     font-style: italic;
   }
 }
-
-
 
 .gh {
   background-color: $background-color;
@@ -384,6 +374,7 @@ img {
 
       li {
         margin-bottom: 10px;
+
         strong {
           color: $primary-color;
         }
@@ -409,16 +400,16 @@ a:hover {
   padding: 0;
 
   p {
-      color: white;
-      font-weight: 500;
-      font-style: italic;
+    color: white;
+    font-weight: 500;
+    font-style: italic;
   }
 
   img {
-      object-fit: cover;
-      height: 400px;
-      @include transition (opacity 0.5s ease-in-out);
-      }
+    object-fit: cover;
+    height: 400px;
+    @include transition (opacity 0.5s ease-in-out);
+  }
 }
 
 .mdescripcion {
@@ -482,8 +473,6 @@ section[class^="ministerio-"] {
     border-radius: 8px;
   }
 }
-
-
 
 footer {
   display: flex;

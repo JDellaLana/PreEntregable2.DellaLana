@@ -1,11 +1,11 @@
 @mixin transition ($properties...) {
-    transition: $properties;
-  }
-  
-  @mixin registrarse-button {
-    background-color: red;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-  }
+  transition: $properties;
+}
+
+@mixin registrarse-button {
+  background-color: $button-background;
+  color: $button-text-color;
+  border: none;
+  padding: 10px 20px;
+}
   

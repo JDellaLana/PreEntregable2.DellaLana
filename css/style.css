@@ -45,10 +45,10 @@ body {
   background-color: darkred;
   color: black;
 }
-.navbar-brand {
+.navbar .navbar-brand {
   margin-bottom: 0;
 }
-.navbar-toggler {
+.navbar .navbar-toggler {
   order: 1;
   position: relative;
 }
@@ -252,8 +252,8 @@ img {
 #dosmin-comparativa .realidad {
   width: 50%;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: lightgray;
+  border: 1px solid black;
+  background-color: #f9f9f9;
   margin-right: 10px;
 }
 .dosmin-comparativa .ficcion:last-child, #dosmin-comparativa .ficcion:last-child,
@@ -267,7 +267,7 @@ img {
   padding: 10px;
   cursor: pointer;
   user-select: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid black;
   position: relative;
 }
 .dosmin-comparativa .ficcion h2:after, #dosmin-comparativa .ficcion h2:after,
@@ -315,7 +315,7 @@ img {
 }
 
 .gh {
-  background-color: lightgray;
+  background-color: #f9f9f9;
   font-family: Arial, sans-serif;
   color: #2c3e50;
 }
